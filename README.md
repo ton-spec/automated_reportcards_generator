@@ -167,6 +167,53 @@ HTML/CSS/JavaScript (Sidebar UI)
 
 
 
+Here is my google doc template:
+
+{{SCHOOL_LOGO}}
+
+# Student Report Card for Grade 8
+
+**Student Name:** {{NAME}}  
+**Admission Number:** {{ADM}}
+
+---
+
+### Subjects and Scores
+
+| Learning Areas | Cat1 Scores | Cat1 Rubrics | Cat2 Scores | Cat2 Rubrics | Average Scores | Rubric Levels |
+|----------------|-------------|--------------|-------------|--------------|----------------|----------------|
+| English        | {{ENG_CAT1}} | {{ENG_CAT1_RUBRIC}} | {{ENG_CAT2}} | {{ENG_CAT2_RUBRIC}} | {{ENG}} | {{ENG_RUBRIC}} |
+| Kiswahili      | {{KIS_CAT1}} | {{KIS_CAT1_RUBRIC}} | {{KIS_CAT2}} | {{KIS_CAT2_RUBRIC}} | {{KIS}} | {{KIS_RUBRIC}} |
+| Maths          | {{MATH_CAT1}} | {{MATH_CAT1_RUBRIC}} | {{MATH_CAT2}} | {{MATH_CAT2_RUBRIC}} | {{MATH}} | {{MATH_RUBRIC}} |
+| Int Scie       | {{SCI_CAT1}} | {{SCI_CAT1_RUBRIC}} | {{SCI_CAT2}} | {{SCI_CAT2_RUBRIC}} | {{SCI}} | {{SCI_RUBRIC}} |
+| SST            | {{SST_CAT1}} | {{SST_CAT1_RUBRIC}} | {{SST_CAT2}} | {{SST_CAT2_RUBRIC}} | {{SST}} | {{SST_RUBRIC}} |
+| C.Arts & S     | {{ART_CAT1}} | {{ART_CAT1_RUBRIC}} | {{ART_CAT2}} | {{ART_CAT2_RUBRIC}} | {{ART}} | {{ART_RUBRIC}} |
+| Pretech        | {{PRETECH_CAT1}} | {{PRETECH_CAT1_RUBRIC}} | {{PRETECH_CAT2}} | {{PRETECH_CAT2_RUBRIC}} | {{PRETECH}} | {{PRETECH_RUBRIC}} |
+| Agrics         | {{AGRIC_CAT1}} | {{AGRIC_CAT1_RUBRIC}} | {{AGRIC_CAT2}} | {{AGRIC_CAT2_RUBRIC}} | {{AGRIC}} | {{AGRIC_RUBRIC}} |
+| C.R.E          | {{CRE_CAT1}} | {{CRE_CAT1_RUBRIC}} | {{CRE_CAT2}} | {{CRE_CAT2_RUBRIC}} | {{CRE}} | {{CRE_RUBRIC}} |
+
+---
+
+### Totals and Averages
+
+| Category        | Total         | Mean           | Rubric Level         |
+|-----------------|---------------|----------------|-----------------------|
+| CAT 1 SCORES    | {{TOTAL_CAT1}} | {{MEAN_CAT1}} | {{MEAN_CAT1_RUBRIC}} |
+| CAT 2 SCORES    | {{TOTAL_CAT2}} | {{MEAN_CAT2}} | {{MEAN_CAT2_RUBRIC}} |
+| AVERAGE SCORES  | {{TOTAL_AVG}}  | {{MEAN_AVG}}  | {{MEAN_AVG_RUBRIC}}  |
+
+---
+
+**Class Teacher's Comment:** {{AVG_COMMENT}}  
+
+**H.O.I's Comment:** ………………………………………………………………………………………………………………..
+
+**H.O.I's Signature:** ____________________  
+**Date:** ………………………………………………
+
+**Closing Date:** 4th of April, 2025  
+**Opening Date:** 28th of April, 2025
+
 
 📬 Contact
 
