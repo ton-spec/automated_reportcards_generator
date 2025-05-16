@@ -195,14 +195,14 @@ SpreadsheetApp.getUi().alert("✅ Report Cards with Charts and Download Links Ge
 
 function getRubric(score) {
 score = Number(score);
-if (score >= 90) return "E.E AL8";
-if (score >= 75) return "E.E AL7";
-if (score >= 60) return "M.E AL6";
-if (score >= 50) return "M.E AL5";
-if (score >= 35) return "A.E AL4";
-if (score >= 25) return "A.E AL3";
-if (score >= 15) return "B.E AL2";
-return "B.E AL1";
+if (score >= 90) return "E.E ~AL8";
+if (score >= 75) return "E.E ~AL7";
+if (score >= 60) return "M.E ~AL6";
+if (score >= 50) return "M.E ~AL5";
+if (score >= 35) return "A.E ~AL4";
+if (score >= 25) return "A.E ~AL3";
+if (score >= 15) return "B.E ~AL2";
+return "B.E ~AL1";
 }
 
 // Sidebar + Menu
@@ -222,21 +222,21 @@ SpreadsheetApp.getActiveSpreadsheet().toast('Sidebar opened successfully!');
 }
 function getGeneralComment(rubric) {
   switch (rubric) {
-    case "E.E AL8":
+    case "E.E ~AL8":
       return "Exceptionally excellent performance! Hongera! Keep up the great work and continue aiming high.";
-      case "E.E AL7":
+      case "E.E ~AL7":
       return "Excellent performance! Hongera! Keep up the great work and continue aiming high.";
-    case "M.E AL6":
+    case "M.E ~AL6":
       return " Exceptionally good job! Vyema! You are meeting the required standards. Strive for even greater heights.";
-      case "M.E AL5":
+      case "M.E ~AL5":
       return "Good job! Vyema! You are meeting the required standards. Strive for even greater heights.";
-    case "A.E AL4":
+    case "A.E ~AL4":
       return "Exceptionally fair performance. Jikakamue! More effort and focus will lead to improvement.";
-      case "A.E AL3":
+      case "A.E ~AL3":
       return "Fair performance. Jikakamue! More effort and focus will lead to improvement.";
-    case "B.E AL2":
+    case "B.E ~AL2":
       return "Needs improvement. Jitahidi! Let's work together to achieve better results.";
-      case "B.E AL1":
+      case "B.E ~AL1":
       return "Serously needs improvement. Jitahidi! Let's work together to achieve better results.";
     default:
       return "No comment available.";
@@ -244,16 +244,15 @@ function getGeneralComment(rubric) {
 }
 function generateRubricSummary(data, folder) {
   let rubricCount = {
-  t rubricCount = {
-    'E.E AL8': 0,
-    'E.E AL7': 0,
-    'M.E AL6': 0,
-    'M.E AL5': 0,
-    'A.E AL4': 0,
-    'A.E AL3': 0,
-    'B.E AL2': 0,
-    'B.E AL1': 0
-  };
+    'E.E ~AL8': 0,
+    'E.E ~AL7': 0,
+    'M.E ~AL6': 0,
+    'M.E ~AL5': 0,
+    'A.E ~AL4': 0,
+    'A.E ~AL3': 0,
+    'B.E ~AL2': 0,
+    'B.E ~AL1': 0
+  }
 
   for (let i = 1; i < data.length; i++) {
     const cat1 = Number(data[i][2]); // Example column index for ENG_CAT1
